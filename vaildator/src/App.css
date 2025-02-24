@@ -1,3 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background: linear-gradient(10deg, #7393B3 13%, #FFFFFF 40%, #FFFFFF 52%);
+  min-height: 100vh;
+}
+
 h2{
   color: green;
+  padding-bottom: 14px;
 }
+h3{
+  padding-bottom: 14px;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make it take full viewport height */
+  text-align: center; 
+}
+

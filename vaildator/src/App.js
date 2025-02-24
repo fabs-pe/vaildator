@@ -11,19 +11,18 @@ const App = () => {
     if (validator.isStrongPassword(value, {
       minLength: 10, minLowercase: 1, minUppercase: 1, minNumbers: 2, minSymbols: 1
     })) {
-      setErrorMessage('Is strong password')
+      setErrorMessage('Password is strong')
     } else {
-      setErrorMessage('Is not strong Password')
+      setErrorMessage('Password is weak')
     }
   }
 
 
 return (
-  <div style={{
-    marginLeft: '200px',
-  }}>
+  <div className="main">
     <pre>
-      <h2>Checking Password Strength</h2>
+      <h2>Password Strength Checker</h2>
+      <h3>Test the strength of your password</h3>
       <span>Enter Password:</span><input type="text"
       onChange={(e) => validate(e.target.value)}></input> <br />
       {errorMessage === ' ' ? null:
